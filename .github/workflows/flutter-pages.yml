@@ -23,14 +23,13 @@ jobs:
           channel: stable
 
       - name: Build Flutter Web
-        working-directory: f2
         run: flutter build web --base-href=/my-flutter-demo/
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: f2/build/web
+          path: build/web
 
   deploy:
     needs: build
