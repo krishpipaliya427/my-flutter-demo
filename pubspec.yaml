@@ -65,7 +65,7 @@ flutter:
     - assets/images/cat.png
     - assets/images/b.png
     - assets/images/mafi.png  
-    - assets/images/goma.gif  
+    
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
