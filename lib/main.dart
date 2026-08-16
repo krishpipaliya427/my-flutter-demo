@@ -18,11 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Center(child: const MyHomePage(title: '🥺')),
+      home: Center( child: const MyHomePage(title: '🥺')),
     );
   }
 }
@@ -123,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         padding: const EdgeInsets.only(left: 90),
                         child: Container(
                           width: 140,
-                          height: 40,
+                          height: 60,
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.pink,
@@ -141,18 +137,19 @@ class _MyHomePageState extends State<MyHomePage> {
                          padding: const EdgeInsets.only(left: 40),
                          child: Container(
                           width: 140,
-                          height: 40,
+                          height: 60,
                            child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
+                              backgroundColor: Colors.white54,
                               foregroundColor: Colors.black
+                              
                             ),
                             onPressed: (){
                               Navigator.push(context, MaterialPageRoute(builder: (context) {
                                 return Secound_1();
                               },));
       
-                          }, child: Text("No",style: TextStyle(fontSize: 21,),)),
+                          }, child: Text("No",style: TextStyle(fontSize: 22,),)),
                          ),
                        )
                         ]

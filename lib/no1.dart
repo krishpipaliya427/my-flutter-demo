@@ -25,7 +25,7 @@ class _No1State extends State<No1> {
     
     
     return Scaffold(
-      appBar: AppBar(title: Text("No"),),
+      appBar: AppBar(),
       body: Center(
         child:Container(
              width: double.infinity,
@@ -88,7 +88,7 @@ class _No1State extends State<No1> {
                               ),
                               onPressed: (){
                               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                                return MyHomePage(title: "goback");
+                                return MyHomePage(title: "🥺");
                               },));
                               
                             }, child: Center(child: Text("GoBack ❤️",textAlign: TextAlign.center,style: TextStyle(fontSize: 18),))),

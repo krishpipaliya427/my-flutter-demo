@@ -111,6 +111,7 @@ class _YesState extends State<Yes> {
                           SizedBox(height: 30,),
                            Container(
                             width: 140,
+                            height: 50,
                              child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors.pink,
@@ -121,7 +122,7 @@ class _YesState extends State<Yes> {
                                           return Next();
                                         },));
                                         
-                                      }, child: Center(child: Text("Next❤️",textAlign: TextAlign.center,style: TextStyle(fontSize: 18),))),
+                                      }, child: Center(child: Text("Next❤️",textAlign: TextAlign.center,style: TextStyle(fontSize: 21),))),
                            ),
                         ],
                       ),
