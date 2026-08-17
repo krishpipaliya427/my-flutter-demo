@@ -3,8 +3,7 @@ name: Deploy Flutter Web
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - my-new-branch
 
 permissions:
   contents: read
@@ -17,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
@@ -25,25 +24,19 @@ jobs:
           channel: stable
 
       - name: Build Flutter Web
-        run: flutter build web --base-href=/my-flutter-demo/
+        run: |
+          cd f2
+          flutter pub get
+          flutter build web --release --base-href=/my-flutter-demo/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Flutter build
         uses: actions/upload-pages-artifact@v4
-       with:
-          path: build/web
+        with:
+          path: f2/build/web
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
