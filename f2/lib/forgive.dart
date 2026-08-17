@@ -26,8 +26,7 @@ class _ForgiveState extends State<Forgive> {
   }
  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Forgive"),
-      ),
+      appBar: AppBar(),
       body: Center(
         child:Container(
              width: double.infinity,
@@ -70,7 +69,7 @@ class _ForgiveState extends State<Forgive> {
                           borderRadius: BorderRadius.circular(21),
                           child: Container(
                             color: Color(0xffffe9ec),
-                            child: Image.asset("assets/images/goma.gif",
+                            child: Image.asset("assets/images/goma.jpg",
                             fit: BoxFit.contain,
                             width: 250,
                             height: 200,

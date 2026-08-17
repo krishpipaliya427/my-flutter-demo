@@ -21,7 +21,7 @@ class _YesState extends State<Next> {
   }
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Yes"),),
+      appBar: AppBar(),
       body: Center(
         child:Container(
              width: double.infinity,

@@ -25,7 +25,7 @@ class _Secound_1State extends State<Secound_1> {
   }
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Secound page"),),
+      appBar: AppBar(),
       body:  Center(
         child:Container(
              width: double.infinity,

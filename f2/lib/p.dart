@@ -29,7 +29,7 @@ class _pState extends State<P> {
   
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Yes"),),
+      appBar: AppBar(),
       body: Center(
         child:Container(
              width: double.infinity,
@@ -212,8 +212,8 @@ class _pState extends State<P> {
                                         Padding(
                                           padding: const EdgeInsets.only(bottom: 30),
                                           child: Container(
-                                            width: 130,
-                                            height: 40,
+                                            width: 140,
+                                            height: 50,
                                            
                                               
                                                  child: ElevatedButton(
@@ -225,7 +225,7 @@ class _pState extends State<P> {
                                                            Navigator.push(context, MaterialPageRoute(builder: (context) {
                                                              return Forgive();
                                                            },));                             
-                                                  }, child: Text("Next",style: TextStyle(fontSize: 18),)),
+                                                  }, child: Text("Next",style: TextStyle(fontSize: 21),)),
                                                ),
                                         ),
                                             
